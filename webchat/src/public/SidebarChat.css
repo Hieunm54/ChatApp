@@ -1,0 +1,20 @@
+.sidebarChat{
+    display: flex;
+    padding: 20px;
+    cursor: pointer; /* hover show pointer */
+    border-bottom: 1px solid ghostwhite;
+}
+
+/* change the click's appearance */
+.sidebarChat:hover{
+    background-color: grey;
+}
+
+.sidebarChat_room{
+    margin-left: 10px;
+}
+
+.sidebarChat_room > h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+}

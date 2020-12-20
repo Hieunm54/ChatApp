@@ -1,0 +1,90 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+  }
+
+.chat_header{
+  display: flex;
+  justify-content: space-between;
+  padding: 17px;
+  align-items: center;
+  border-bottom:1px solid dimgrey;
+}
+
+.chat_header_info > h2{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.chat_header_icons{
+  display: inline;
+  justify-content: space-between;
+
+}
+
+.chat_header_info > p{
+  color: rgb(42, 68, 117);
+}
+
+.chat_body{
+  flex: 1;
+  background-image: url("https://plainbackground.com/download.php?imagename=e9bba6.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+  border-left: 1px solid burlywood;
+}
+
+.chat_message{
+  position: relative;  
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: burlywood;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.chat_receiver{
+  margin-left: auto;
+  background-color:#e67e22;
+}
+
+
+.chat_name{
+  position: absolute;
+  top : -15px;
+  font-size: xx-small;
+  font-weight: 900;
+}
+
+.chat_time{
+  padding-left: 10px;
+  font-size: xx-small;
+}
+
+.chat_footer{
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  height: 62;
+  border-top: 1px solid burlywood;
+  border-left: 1px solid burlywood;
+}
+
+.chat_footer > form{
+  flex: 1;
+  display: flex;
+}
+
+.chat_footer > form > input{
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  outline-width: 0;
+  border: none;
+}
