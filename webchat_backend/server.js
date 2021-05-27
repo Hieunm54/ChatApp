@@ -1,9 +1,14 @@
 //importing
-import express from 'express'
-import mongoose from 'mongoose'
-import Pusher from 'pusher'
-import cors from 'cors'
-import Message from './messageModel.js'
+// import express from 'express'
+const express = require('express');
+// import mongoose from 'mongoose'
+const mongoose = require('mongoose');
+// import Pusher from 'pusher'
+const Pusher = require("pusher");
+// import cors from 'cors'
+var cors = require('cors');
+
+const Message = require('./messageModel');
 
 //app config
 const app = express();
@@ -15,7 +20,7 @@ const pusher = new Pusher({
     secret: "258e07205a2bf641fc5f",
     cluster: "ap1",
     useTLS: true
-  });
+});
 
 //middleware
 app.use(express.json());
@@ -88,7 +93,7 @@ app.post('/messages/new', (req, res) => {
 //GET ALL THE MESSAGE FROM DATABASE
 app.get('/messages/sync',(req,res) =>{
 
-    Message.find({},(err,docs) =>{
+    Message.find( {} ,(err,docs) =>{
         if(err){
             res.status(500).send(err);
         } else{

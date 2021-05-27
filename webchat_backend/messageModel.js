@@ -1,4 +1,5 @@
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
+const mongoose = require('mongoose');
 
 const {Schema} = mongoose;
 
@@ -13,4 +14,4 @@ const messageSchema = new Schema({
 
 //export luon model
 
-export default mongoose.model('messageModel',messageSchema);
+module.exports = mongoose.model('messageModel',messageSchema);
